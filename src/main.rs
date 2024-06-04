@@ -5,7 +5,6 @@ use std::io::prelude::*;
 use std::env;
 use walkdir::WalkDir;
 
-
 #[derive(Deserialize)]
 struct lrclib {
     id: i32,
@@ -16,8 +15,7 @@ struct lrclib {
     duration: f64,
     instrumental: bool,
     plainLyrics: Option<String>,
-    syncedLyrics: Option<String> // option can either contain type of "None" ()
-
+    syncedLyrics: Option<String>
 }
 
 fn description(){
@@ -68,7 +66,6 @@ fn get_lyrics(artist: String, title: String, album: String, duration: String) ->
                 None => "".to_string()
             }
         };
-       
     }
 
     Ok(lyrics)
@@ -151,7 +148,4 @@ fn main() {
     println!("Total tracks processed: {}", total_tracks);
     println!("Total tracks with lyrics found: {}", found);
     println!("Total tracks with lyrics missing: {}", fail);
-  
 }
-
-
