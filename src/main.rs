@@ -1,5 +1,4 @@
 use audiotags::Tag;
-use std::ffi::OsString;
 use std::{fs::File, path::Path};
 use serde::Deserialize;
 use std::io::prelude::*;
