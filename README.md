@@ -1,7 +1,7 @@
 # rustlrc
 Rust program that gets lyrics from LRCLIB for an offline music library. 
 
-# usage
+# Usage
 ```bash
 ./rustlrc <Music Directory>
 ```
